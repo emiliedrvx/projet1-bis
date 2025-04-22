@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Travel Dream</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,13 +23,13 @@
       <p>Far away from city lights, Patagonia offers a unique mix of wild nature, snowy peaks, and endless skies. Whether you're hiking through Torres del Paine or sailing around the glaciers of El Calafate, the adventure never ends.</p>
     </section>
 
-    <section>
+    <section class="clearfix">
       <img src="torres.jpg" alt="Torres del Paine" class="img-left">
       <img src="glacier.jpg" alt="Perito Moreno Glacier" class="img-center">
       <img src="lagoon.jpg" alt="Lagoon in El Chaltén" class="img-right">
     </section>
 
-    <section>
+    <section class="clearfix">
       <p>Looking for something new? Patagonia is your next unforgettable trip. Pack your backpack, lace your hiking boots and go!</p>
     </section>
 
